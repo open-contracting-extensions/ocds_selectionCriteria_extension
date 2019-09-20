@@ -41,7 +41,19 @@
       "title": "Selection criterion",
       "description": "Characteristics of a selection criterion",
       "type": "object",
+      "required": [
+        "id"
+      ],
       "properties": {
+        "id": {
+          "title": "Selection criterion ID",
+          "description": "The identifier for this selection criterion. It must be unique and must not change within the Open Contracting Process it is part of (defined by a single ocid). See the [identifier guidance](https://standard.open-contracting.org/latest/en/schema/identifiers/) for further details.",
+          "type": [
+            "string",
+            "integer"
+          ],
+          "minLength": 1
+        },
         "description": {
           "title": "Selection criterion description",
           "description": "Description of the selection criterion",
@@ -68,7 +80,8 @@
           "enum": [
             "technical",
             "economic",
-            "suitability"
+            "suitability",
+            null
           ],
           "codelist": "selectionCriterionType.csv",
           "openCodelist": false
