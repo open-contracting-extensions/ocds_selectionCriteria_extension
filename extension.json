@@ -15,6 +15,6 @@
     "release-schema.json"
   ],
   "codelists": [
-    "selectionCriteriaType.csv"
+    "selectionCriterionType.csv"
   ]
 }

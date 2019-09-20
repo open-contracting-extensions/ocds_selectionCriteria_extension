@@ -70,7 +70,7 @@
             "financial",
             "suitability"
           ],
-          "codelist": "selectionCriteriaType.csv",
+          "codelist": "selectionCriterionType.csv",
           "openCodelist": false
         }
       }
