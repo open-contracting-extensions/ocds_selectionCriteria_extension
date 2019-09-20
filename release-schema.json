@@ -40,7 +40,7 @@
     "SelectionCriterion": {
       "title": "Selection criterion",
       "description": "Characteristics of a selection criterion",
-      "type": "objet",
+      "type": "object",
       "properties": {
         "description": {
           "title": "Selection criterion description",
