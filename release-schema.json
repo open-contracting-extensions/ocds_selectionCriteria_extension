@@ -28,7 +28,7 @@
           "description": "The list of criteria with their characteristics.",
           "type": [
             "array",
-            "null"
+            null
           ],
           "items": {
             "$ref": "#/definitions/SelectionCriterion"
@@ -67,7 +67,7 @@
           ],
           "enum": [
             "technical",
-            "financial",
+            "economic",
             "suitability"
           ],
           "codelist": "selectionCriterionType.csv",
