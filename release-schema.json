@@ -81,6 +81,7 @@
             "technical",
             "economic",
             "suitability",
+            "other",
             null
           ],
           "codelist": "selectionCriterionType.csv",
