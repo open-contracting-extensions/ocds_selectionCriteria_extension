@@ -28,7 +28,7 @@
           "description": "The list of criteria with their characteristics.",
           "type": [
             "array",
-            null
+            "null"
           ],
           "items": {
             "$ref": "#/definitions/SelectionCriterion"
@@ -59,7 +59,7 @@
           "description": "Description of the selection criterion",
           "type": [
             "string",
-            null
+            "null"
           ]
         },
         "minimum": {
@@ -67,7 +67,7 @@
           "description": "The minimum value or level of compliance the candidate must meet to be allowed to bid.",
           "type": [
             "string",
-            null
+            "null"
           ]
         },
         "type": {
@@ -75,7 +75,7 @@
           "description": "The type of selection criterion",
           "type": [
             "string",
-            null
+            "null"
           ],
           "enum": [
             "technical",
