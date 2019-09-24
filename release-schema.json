@@ -27,8 +27,7 @@
           "title": "List of criteria",
           "description": "The list of criteria with their characteristics.",
           "type": [
-            "array",
-            "null"
+            "array"
           ],
           "items": {
             "$ref": "#/definitions/SelectionCriterion"
