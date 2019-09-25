@@ -1,6 +1,6 @@
-# Selection criteria
+# Selection Criteria
 
-Adds an object in tender and lot objects to describe the criteria chosen to select the candidates who will be allowed to bid.
+Adds an object to describe the criteria to qualify candidates to participate in a contracting process.
 
 ## Legal context
 
@@ -9,20 +9,22 @@ In the European Union, this extension's fields correspond to [eForms BG-702 (Sel
 ## Examples
 
 ```json
-"tender": {
-  "selectionCriteria": {
-    "criteria": [
-      {
-        "description": "<Description of the criterion>",
-        "minimum": "<Minimum value or level of compliance>",
-        "type": "technical"
-      },
-      {
-        "description": "<Description of the criterion>",
-        "minimum": "<Minimum value or level of compliance>",
-        "type": "financial"
-      }
-    ]
+{
+  "tender": {
+    "selectionCriteria": {
+      "criteria": [
+        {
+          "description": "<Description of the criterion>",
+          "minimum": "<Minimum value or level of compliance>",
+          "type": "technical"
+        },
+        {
+          "description": "<Description of the criterion>",
+          "minimum": "<Minimum value or level of compliance>",
+          "type": "economic"
+        }
+      ]
+    }
   }
 }
 ```

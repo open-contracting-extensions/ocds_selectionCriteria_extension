@@ -1,9 +1,9 @@
 {
   "name": {
-    "en": "Selection criteria"
+    "en": "Selection Criteria"
   },
   "description": {
-    "en": "Adds an object in tender and lot objects to describe the criteria chosen to select the candidates who will be allowed to bid."
+    "en": "Adds an object to describe the conditions for participation in a contracting process."
   },
   "documentationUrl": {
     "en": "https://github.com/open-contracting-extensions/ocds_selectionCriteria_extension"
