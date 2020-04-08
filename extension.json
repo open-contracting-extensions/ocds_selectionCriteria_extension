@@ -6,7 +6,7 @@
     "en": "Adds an object to describe the conditions for participation in a contracting process."
   },
   "documentationUrl": {
-    "en": "https://github.com/open-contracting-extensions/ocds_selectionCriteria_extension"
+    "en": "https://extensions.open-contracting.org/en/extensions/selectionCriteria/"
   },
   "compatibility": [
     "1.1"
