@@ -31,9 +31,11 @@
             "$ref": "#/definitions/SelectionCriterion"
           },
           "wholeListMerge": true,
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         }
-      }
+      },
+      "minProperties": 1
     },
     "SelectionCriterion": {
       "title": "Selection criterion",
@@ -63,7 +65,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "minimum": {
           "title": "Minimum value or level",
@@ -71,9 +74,11 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         }
-      }
+      },
+      "minProperties": 1
     }
   }
 }
