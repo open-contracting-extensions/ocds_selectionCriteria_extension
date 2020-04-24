@@ -32,6 +32,14 @@
           },
           "wholeListMerge": true,
           "uniqueItems": true
+        },
+        "description": {
+          "title": "Description",
+          "description": "The description of the criteria used to select the economic operators who will be allowed to bid.",
+          "type": [
+            "string",
+            "null"
+          ]
         }
       }
     },
