@@ -33,6 +33,14 @@
           "wholeListMerge": true,
           "uniqueItems": true,
           "minItems": 1
+        },
+        "description": {
+          "title": "Description",
+          "description": "The description of the criteria used to select the economic operators who will be allowed to bid.",
+          "type": [
+            "string",
+            "null"
+          ]
         }
       },
       "minProperties": 1
