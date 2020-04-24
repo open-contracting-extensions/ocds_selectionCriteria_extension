@@ -9,20 +9,24 @@ In the European Union, this extension's fields correspond to [eForms BG-702 (Sel
 ## Examples
 
 ```json
-"tender": {
-  "selectionCriteria": {
-    "criteria": [
-      {
-        "description": "<Description of the criterion>",
-        "minimum": "<Minimum value or level of compliance>",
-        "type": "technical"
-      },
-      {
-        "description": "<Description of the criterion>",
-        "minimum": "<Minimum value or level of compliance>",
-        "type": "financial"
-      }
-    ]
+{
+  "tender": {
+    "selectionCriteria": {
+      "criteria": [
+        {
+          "id": "criterion-1",
+          "dnoescription": "<Description of the criterion>",
+          "minimum": "<Minimum value or level of compliance>",
+          "type": "technical"
+        },
+        {
+          "id": "criterion-2",
+          "description": "<Description of the criterion>",
+          "minimum": "<Minimum value or level of compliance>",
+          "type": "economic"
+        }
+      ]
+    }
   }
 }
 ```
