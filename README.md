@@ -1,6 +1,6 @@
-# Selection criteria
+# Selection Criteria
 
-Adds an object in tender and lot objects to describe the criteria chosen to select the candidates who will be allowed to bid.
+Adds an object to describe the criteria to qualify candidates to participate in a contracting process.
 
 ## Legal context
 
@@ -14,13 +14,11 @@ In the European Union, this extension's fields correspond to [eForms BG-702 (Sel
     "selectionCriteria": {
       "criteria": [
         {
-          "id": "criterion-1",
-          "dnoescription": "<Description of the criterion>",
+          "description": "<Description of the criterion>",
           "minimum": "<Minimum value or level of compliance>",
           "type": "technical"
         },
         {
-          "id": "criterion-2",
           "description": "<Description of the criterion>",
           "minimum": "<Minimum value or level of compliance>",
           "type": "economic"
@@ -34,3 +32,7 @@ In the European Union, this extension's fields correspond to [eForms BG-702 (Sel
 ## Issues
 
 Report issues for this extension in the [ocds-extensions repository](https://github.com/open-contracting/ocds-extensions/issues), putting the extension's name in the issue's title.
+
+## Changelog
+
+This extension was originally discussed as part of the [OCDS for EU profile](https://github.com/open-contracting-extensions/european-union/issues) and in [pull requests](https://github.com/open-contracting-extensions/ocds_selectionCriteria_extension/pulls?q=is%3Apr+is%3Aclosed).

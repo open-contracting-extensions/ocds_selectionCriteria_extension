@@ -4,7 +4,7 @@
       "properties": {
         "selectionCriteria": {
           "title": "Selection criteria",
-          "description": "Information about the criteria used by the procuring entity to select the economic operators who will be allowed to bid.",
+          "description": "Information about the conditions for participation in a procedure.",
           "$ref": "#/definitions/SelectionCriteria"
         }
       }
@@ -13,25 +13,24 @@
       "properties": {
         "selectionCriteria": {
           "title": "Selection criteria",
-          "description": "Information about the criteria used by the procuring entity to select the economic operators who will be allowed to bid.",
+          "description": "Information about the conditions for participation in a lot.",
           "$ref": "#/definitions/SelectionCriteria"
         }
       }
     },
     "SelectionCriteria": {
       "title": "Selection criteria",
-      "description": "Information about the criteria used by the procuring entity to select the economic operators who will be allowed to bid.",
+      "description": "Information about conditions for participation.",
       "type": "object",
       "properties": {
         "criteria": {
-          "title": "List of criteria",
-          "description": "The list of criteria with their characteristics.",
-          "type": [
-            "array"
-          ],
+          "title": "Selection criteria",
+          "description": "The selection criteria.",
+          "type": "array",
           "items": {
             "$ref": "#/definitions/SelectionCriterion"
           },
+          "wholeListMerge": true,
           "uniqueItems": true
         },
         "description": {
@@ -46,40 +45,12 @@
     },
     "SelectionCriterion": {
       "title": "Selection criterion",
-      "description": "Characteristics of a selection criterion",
+      "description": "Information about the selection criterion.",
       "type": "object",
-      "required": [
-        "id"
-      ],
       "properties": {
-        "id": {
-          "title": "Selection criterion ID",
-          "description": "The identifier for this selection criterion. It must be unique and must not change within the Open Contracting Process it is part of (defined by a single ocid). See the [identifier guidance](https://standard.open-contracting.org/latest/en/schema/identifiers/) for further details.",
-          "type": [
-            "string",
-            "integer"
-          ],
-          "minLength": 1
-        },
-        "description": {
-          "title": "Selection criterion description",
-          "description": "Description of the selection criterion",
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "minimum": {
-          "title": "Minimum value or level",
-          "description": "The minimum value or level of compliance the candidate must meet to be allowed to bid.",
-          "type": [
-            "string",
-            "null"
-          ]
-        },
         "type": {
-          "title": "Selection criterion type",
-          "description": "The type of selection criterion",
+          "title": "Type",
+          "description": "The type of the criterion.",
           "type": [
             "string",
             "null"
@@ -93,6 +64,22 @@
           ],
           "codelist": "selectionCriterionType.csv",
           "openCodelist": false
+        },
+        "description": {
+          "title": "Description",
+          "description": "The description of the criterion.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "minimum": {
+          "title": "Minimum value or level",
+          "description": "The minimum value or level of compliance a candidate needs to meet in order to participate.",
+          "type": [
+            "string",
+            "null"
+          ]
         }
       }
     }
