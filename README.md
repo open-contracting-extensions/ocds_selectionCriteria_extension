@@ -16,12 +16,19 @@ In the European Union, this extension's fields correspond to [eForms BG-702 (Sel
         {
           "description": "<Description of the criterion>",
           "minimum": "<Minimum value or level of compliance>",
-          "type": "technical"
+          "type": "technical",
+          "appliesTo": [
+            "supplier",
+            "subcontractor"
+          ]
         },
         {
           "description": "<Description of the criterion>",
           "minimum": "<Minimum value or level of compliance>",
-          "type": "economic"
+          "type": "economic",
+          "appliesTo": [
+            "supplier"
+          ]
         }
       ]
     }
@@ -34,6 +41,10 @@ In the European Union, this extension's fields correspond to [eForms BG-702 (Sel
 Report issues for this extension in the [ocds-extensions repository](https://github.com/open-contracting/ocds-extensions/issues), putting the extension's name in the issue's title.
 
 ## Changelog
+
+### 2020-07-13
+
+* Add the `appliesTo` field
 
 ### 2020-04-24
 
