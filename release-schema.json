@@ -80,6 +80,25 @@
             "string",
             "null"
           ]
+        },
+        "appliesTo": {
+          "title": "Applies to",
+          "description": "Whether the criterion applies to suppliers, subcontractors, or both.",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string",
+            "enum": [
+              "supplier",
+              "subcontractor"
+            ]
+          },
+          "codelist": "appliesTo.csv",
+          "openCodelist": false,
+          "minItems": 0,
+          "omitWhenMerged": true
         }
       }
     }
