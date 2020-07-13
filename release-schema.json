@@ -101,7 +101,7 @@
           },
           "codelist": "appliesTo.csv",
           "openCodelist": false,
-          "omitWhenMerged": true
+          "uniqueItems": true
         }
       },
       "minProperties": 1
