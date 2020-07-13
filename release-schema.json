@@ -31,7 +31,8 @@
             "$ref": "#/definitions/SelectionCriterion"
           },
           "wholeListMerge": true,
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         },
         "description": {
           "title": "Description",
@@ -41,7 +42,8 @@
             "null"
           ]
         }
-      }
+      },
+      "minProperties": 1
     },
     "SelectionCriterion": {
       "title": "Selection criterion",
@@ -71,7 +73,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "minimum": {
           "title": "Minimum value or level",
@@ -79,7 +82,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "appliesTo": {
           "title": "Applies to",
@@ -97,10 +101,10 @@
           },
           "codelist": "appliesTo.csv",
           "openCodelist": false,
-          "minItems": 0,
           "omitWhenMerged": true
         }
-      }
+      },
+      "minProperties": 1
     }
   }
 }
