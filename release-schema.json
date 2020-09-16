@@ -40,7 +40,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         }
       },
       "minProperties": 1
@@ -101,7 +102,8 @@
           },
           "codelist": "appliesTo.csv",
           "openCodelist": false,
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         }
       },
       "minProperties": 1
