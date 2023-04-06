@@ -28,11 +28,11 @@ A tender with a single selection criterion.
             "subcontractor"
           ],
           "numbers": [
-              {
-                "number": "40",
-                "threshold": "minimumScore"
-              }
-            ]
+            {
+              "number": 40,
+              "threshold": "minimumScore"
+            }
+          ]
         }
       ]
     }
@@ -51,17 +51,19 @@ A tender with a single lot where the selection criterion only applies for select
       {
         "id": "LOT-0001",
         "selectionCriteria": {
-          "criteria": {
-            "description": "A description of the criteria",
-            "type": "suitability",
-            "forReduction": true,
-            "numbers": [
-              {
-                "number": "30",
-                "weight": "percentageExact"
-              }
-            ]
-          }
+          "criteria": [
+            {
+              "description": "A description of the criteria",
+              "type": "suitability",
+              "forReduction": true,
+              "numbers": [
+                {
+                  "number": 30,
+                  "weight": "percentageExact"
+                }
+              ]
+            }
+          ]
         }
       }
     ]
