@@ -104,6 +104,25 @@
           "openCodelist": false,
           "uniqueItems": true,
           "minItems": 1
+        },
+        "forReduction": {
+          "title": "For reduction?",
+          "description": "A true/false field to indicate if the criteria (or criterion) will (only) be used to select the candidates to be invited for the second stage of the procedure (if a maximum number of candidates was set).",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "numbers": {
+          "title": "Selection criterion numbers",
+          "description": "Information about the numbers linked to the selection criteria.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AwardCriterionNumber"
+          },
+          "wholeListMerge": true,
+          "uniqueItems": true,
+          "minItems": 1
         }
       },
       "minProperties": 1

@@ -2,11 +2,17 @@
 
 Adds an object to describe the criteria to qualify candidates to participate in a contracting process.
 
+If you are using the [Lots extension](https://extensions.open-contracting.org/en/extensions/lots/master/), [follow its guidance](https://extensions.open-contracting.org/en/extensions/lots/master/#usage) on whether to use `tender.lots` fields or `tender` fields.
+
 ## Legal context
 
-In the European Union, this extension's fields correspond to [eForms BG-702 (Selection Criteria)](https://docs.ted.europa.eu/eforms/latest/reference/business-terms/). See [OCDS for the European Union](http://standard.open-contracting.org/profiles/eu/master/en/) for the correspondences to Tenders Electronic Daily (TED).
+In the European Union, this extension's fields correspond to [eForms BG-702 (Selection Criteria) and BG-72 (Selection Criteria Second Stage Invite Number)](https://docs.ted.europa.eu/eforms/latest/reference/business-terms/). For correspondences to eForms fields, see [OCDS for eForms](https://standard.open-contracting.org/profiles/eforms/).
 
 ## Examples
+
+### Tender
+
+A tender with a single selection criterion.
 
 ```json
 {
@@ -20,18 +26,45 @@ In the European Union, this extension's fields correspond to [eForms BG-702 (Sel
           "appliesTo": [
             "supplier",
             "subcontractor"
-          ]
-        },
-        {
-          "description": "<Description of the criterion>",
-          "minimum": "<Minimum value or level of compliance>",
-          "type": "economic",
-          "appliesTo": [
-            "supplier"
-          ]
+          ],
+          "numbers": [
+              {
+                "number": "40",
+                "threshold": "minimumScore"
+              }
+            ]
         }
       ]
     }
+  }
+}
+```
+
+### Lot
+
+A tender with a single lot where the selection criterion only applies for selecting candidates to be invited to the second stage of the procedure.
+
+```json
+{
+  "tender": {
+    "lots": [
+      {
+        "id": "LOT-0001",
+        "selectionCriteria": {
+          "criteria": {
+            "description": "A description of the criteria",
+            "type": "suitability",
+            "forReduction": true,
+            "numbers": [
+              {
+                "number": "30",
+                "weight": "percentageExact"
+              }
+            ]
+          }
+        }
+      }
+    ]
   }
 }
 ```
@@ -42,9 +75,13 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 ## Changelog
 
+### 2023-04-05
+
+* Add `forReduction` field and `numbers` object to `SelectionCriterion`.
+
 ### 2020-07-13
 
-* Add the `appliesTo` field
+* Add the `appliesTo` field.
 
 ### 2020-04-24
 
