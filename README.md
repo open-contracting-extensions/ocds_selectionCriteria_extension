@@ -6,13 +6,13 @@ If you are using the [Lots extension](https://extensions.open-contracting.org/en
 
 ## Legal context
 
-In the European Union, this extension's fields correspond to [eForms BG-702 (Selection Criteria) and BG-72 (Selection Criteria Second Stage Invite Number)](https://docs.ted.europa.eu/eforms/latest/reference/business-terms/). For correspondences to eForms fields, see [OCDS for eForms](https://standard.open-contracting.org/profiles/eforms/).
+In the European Union, this extension's fields correspond to [eForms BG-702 (Selection Criteria) and BG-72 (Selection Criteria Second Stage Invite Number)](https://docs.ted.europa.eu/eforms/latest/reference/business-terms/). For correspondences to eForms fields, see [OCDS for eForms](https://standard.open-contracting.org/profiles/eforms/). See [OCDS for the European Union](http://standard.open-contracting.org/profiles/eu/master/en/) for the correspondences to Tenders Electronic Daily (TED).
 
 ## Examples
 
 ### Tender
 
-A tender with a single selection criterion.
+Potential suppliers and subcontractors must demonstrate a minimum of 10 years experience on similar projects.
 
 ```json
 {
@@ -20,18 +20,12 @@ A tender with a single selection criterion.
     "selectionCriteria": {
       "criteria": [
         {
-          "description": "<Description of the criterion>",
-          "minimum": "<Minimum value or level of compliance>",
+          "description": "Minimum number of years of experience on similar projects",
+          "minimum": "10",
           "type": "technical",
           "appliesTo": [
             "supplier",
             "subcontractor"
-          ],
-          "numbers": [
-            {
-              "number": 40,
-              "threshold": "minimumScore"
-            }
           ]
         }
       ]
@@ -42,7 +36,7 @@ A tender with a single selection criterion.
 
 ### Lot
 
-A tender with a single lot where the selection criterion only applies for selecting candidates to be invited to the second stage of the procedure.
+A tender with a single lot where the selection criterion only applies for selecting candidates to be invited to the second stage of the procedure. The candidates will be selected only if the rate of their turnover over the value of the contract is at least 2.
 
 ```json
 {
@@ -53,13 +47,13 @@ A tender with a single lot where the selection criterion only applies for select
         "selectionCriteria": {
           "criteria": [
             {
-              "description": "A description of the criteria",
-              "type": "suitability",
+              "description": "Turnover over contract value rate",
+              "type": "economic",
               "forReduction": true,
               "numbers": [
                 {
-                  "number": 30,
-                  "weight": "percentageExact"
+                  "number": 2,
+                  "threshold": "minimumScore"
                 }
               ]
             }
