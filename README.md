@@ -2,6 +2,8 @@
 
 Adds an object to describe the criteria to qualify candidates to participate in a contracting process.
 
+If your data closely follows the [Core Criterion and Core Evidence Vocabulary (CCCEV)](https://semiceu.github.io/CCCEV/), consider the [Requirements](https://extensions.open-contracting.org/en/extensions/requirements/master/) extension.
+
 ## Legal context
 
 In the European Union, this extension's fields correspond to [eForms BG-702 (Selection Criteria)](https://docs.ted.europa.eu/eforms/latest/reference/business-terms/). See [OCDS for the European Union](http://standard.open-contracting.org/profiles/eu/master/en/) for the correspondences to Tenders Electronic Daily (TED).
