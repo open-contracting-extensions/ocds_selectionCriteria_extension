@@ -118,7 +118,7 @@
           "description": "Information about the numbers linked to the selection criteria.",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/AwardCriterionNumber"
+            "$ref": "#/definitions/CriterionNumber"
           },
           "wholeListMerge": true,
           "uniqueItems": true,
