@@ -104,6 +104,25 @@
           "openCodelist": false,
           "uniqueItems": true,
           "minItems": 1
+        },
+        "forReduction": {
+          "title": "For reduction?",
+          "description": "Whether the criterion is used to select the potential suppliers to be invited to the second stage of the contracting process, if the number of invitations is limited.",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "numbers": {
+          "title": "Numbers",
+          "description": "Numbers linked to the criterion.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CriterionNumber"
+          },
+          "wholeListMerge": true,
+          "uniqueItems": true,
+          "minItems": 1
         }
       },
       "minProperties": 1

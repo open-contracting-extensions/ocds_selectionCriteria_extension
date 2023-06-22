@@ -1,14 +1,20 @@
-# Selection Criteria
+# Selection criteria
 
 Adds an object to describe the criteria to qualify candidates to participate in a contracting process.
+
+If you are using the [Lots extension](https://extensions.open-contracting.org/en/extensions/lots/master/), [follow its guidance](https://extensions.open-contracting.org/en/extensions/lots/master/#usage) on whether to use `tender.lots` fields or `tender` fields.
 
 If your data closely follows the [Core Criterion and Core Evidence Vocabulary (CCCEV)](https://semiceu.github.io/CCCEV/), consider the [Requirements](https://extensions.open-contracting.org/en/extensions/requirements/master/) extension.
 
 ## Legal context
 
-In the European Union, this extension's fields correspond to [eForms BG-702 (Selection Criteria)](https://docs.ted.europa.eu/eforms/latest/reference/business-terms/). For correspondences to Tenders Electronic Daily (TED), see [OCDS for the European Union](http://standard.open-contracting.org/profiles/eu/latest/en/).
+In the European Union, this extension's fields correspond to [eForms BG-702 (Selection Criteria) and BG-72 (Selection Criteria Second Stage Invite Number)](https://docs.ted.europa.eu/eforms/latest/reference/business-terms/). For correspondences to eForms fields, see [OCDS for eForms](https://standard.open-contracting.org/profiles/eforms/latest/en/). For correspondences to Tenders Electronic Daily (TED), see [OCDS for the European Union](http://standard.open-contracting.org/profiles/eu/latest/en/).
 
 ## Examples
+
+### Tender
+
+Potential suppliers and subcontractors must demonstrate a minimum of 10 years experience on similar projects.
 
 ```json
 {
@@ -16,24 +22,47 @@ In the European Union, this extension's fields correspond to [eForms BG-702 (Sel
     "selectionCriteria": {
       "criteria": [
         {
-          "description": "<Description of the criterion>",
-          "minimum": "<Minimum value or level of compliance>",
+          "description": "Minimum number of years of experience on similar projects",
+          "minimum": "10",
           "type": "technical",
           "appliesTo": [
             "supplier",
             "subcontractor"
           ]
-        },
-        {
-          "description": "<Description of the criterion>",
-          "minimum": "<Minimum value or level of compliance>",
-          "type": "economic",
-          "appliesTo": [
-            "supplier"
-          ]
         }
       ]
     }
+  }
+}
+```
+
+### Lot
+
+A tender with a single lot where the selection criterion only applies for selecting candidates to be invited to the second stage of the procedure. The candidates will be selected only if the rate of their turnover over the value of the contract is at least 2.
+
+```json
+{
+  "tender": {
+    "lots": [
+      {
+        "id": "LOT-0001",
+        "selectionCriteria": {
+          "criteria": [
+            {
+              "description": "Turnover over contract value rate",
+              "type": "economic",
+              "forReduction": true,
+              "numbers": [
+                {
+                  "number": 2,
+                  "threshold": "minimumScore"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
   }
 }
 ```
@@ -44,9 +73,13 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 ## Changelog
 
+### 2023-04-05
+
+* Add `forReduction` and `numbers` fields to the `SelectionCriterion` object. The `numbers` field reuses the `CriterionNumber` definition from the [Award criteria breakdown](https://extensions.open-contracting.org/en/extensions/awardCriteria/master/) extension.
+
 ### 2020-07-13
 
-* Add the `appliesTo` field
+* Add `appliesTo` field.
 
 ### 2020-04-24
 
