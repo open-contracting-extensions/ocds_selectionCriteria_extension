@@ -79,7 +79,7 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 ### 2020-07-13
 
-* Add the `appliesTo` field.
+* Add `appliesTo` field.
 
 ### 2020-04-24
 
