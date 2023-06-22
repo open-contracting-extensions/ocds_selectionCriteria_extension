@@ -75,7 +75,7 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 ### 2023-04-05
 
-* Add the `forReduction` and `numbers` fields to `SelectionCriterion`. The `numbers` field reuses the `CriterionNumber` definition from the [Award criteria breakdown](https://extensions.open-contracting.org/en/extensions/awardCriteria/master/) extension.
+* Add `forReduction` and `numbers` fields to `SelectionCriterion`. The `numbers` field reuses the `CriterionNumber` definition from the [Award criteria breakdown](https://extensions.open-contracting.org/en/extensions/awardCriteria/master/) extension.
 
 ### 2020-07-13
 
