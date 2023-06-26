@@ -2,11 +2,13 @@
 
 Adds an object to describe the criteria to qualify candidates to participate in a contracting process.
 
-If you are using the [Lots extension](https://extensions.open-contracting.org/en/extensions/lots/master/), [follow its guidance](https://extensions.open-contracting.org/en/extensions/lots/master/#usage) on whether to use `tender.lots` fields or `tender` fields.
-
 This extension must be used with the [Award criteria breakdown](https://extensions.open-contracting.org/en/extensions/awardCriteria/master/) extension.
 
 If your data closely follows the [Core Criterion and Core Evidence Vocabulary (CCCEV)](https://semiceu.github.io/CCCEV/), consider the [Requirements](https://extensions.open-contracting.org/en/extensions/requirements/master/) extension.
+
+## Guidance
+
+If you are using the [Lots extension](https://extensions.open-contracting.org/en/extensions/lots/master/), [follow its guidance](https://extensions.open-contracting.org/en/extensions/lots/master/#guidance) on whether to use `tender.lots` fields or `tender` fields.
 
 ## Legal context
 
