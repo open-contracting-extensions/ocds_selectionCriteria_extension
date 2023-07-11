@@ -58,15 +58,15 @@
             "string",
             "null"
           ],
+          "codelist": "selectionCriterionType.csv",
+          "openCodelist": false,
           "enum": [
             "technical",
             "economic",
             "suitability",
             "other",
             null
-          ],
-          "codelist": "selectionCriterionType.csv",
-          "openCodelist": false
+          ]
         },
         "description": {
           "title": "Description",
