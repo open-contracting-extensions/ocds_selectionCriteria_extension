@@ -123,6 +123,15 @@
           "wholeListMerge": true,
           "uniqueItems": true,
           "minItems": 1
+        },
+        "verificationMethod": {
+          "title": "Verification method",
+          "description": "The methods the buyer or procuring entity will use to verify the potential supplier has satisfied the criterion.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
         }
       },
       "minProperties": 1
