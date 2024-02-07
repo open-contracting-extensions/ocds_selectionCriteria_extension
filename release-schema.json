@@ -4,7 +4,7 @@
       "properties": {
         "selectionCriteria": {
           "title": "Selection criteria",
-          "description": "Information about the conditions for participation in a procedure.",
+          "description": "The minimum requirements for potential suppliers to participate in the contracting process. Selection criteria ensure that a potential supplier has the legal and financial capacities and the technical and professional abilities to perform the contract.",
           "$ref": "#/definitions/SelectionCriteria"
         }
       }
@@ -36,7 +36,7 @@
         },
         "description": {
           "title": "Description",
-          "description": "The description of the criteria used to select the economic operators who will be allowed to bid.",
+          "description": "The description of the criteria.",
           "type": [
             "string",
             "null"
