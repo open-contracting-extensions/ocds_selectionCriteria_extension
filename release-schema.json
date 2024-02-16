@@ -126,7 +126,7 @@
         },
         "verificationMethod": {
           "title": "Verification method",
-          "description": "The methods the buyer or procuring entity will use to verify the potential supplier has satisfied the criterion.",
+          "description": "The methods the buyer or procuring entity uses to verify the potential supplier satisfies the criterion.",
           "type": [
             "string",
             "null"

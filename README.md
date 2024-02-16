@@ -42,7 +42,7 @@ Potential suppliers and subcontractors must demonstrate a minimum of 10 years ex
 
 ### Lot
 
-A tender with a single lot where the selection criterion only applies for selecting candidates to be invited to the second stage of the procedure. The candidates will be selected only if the rate of their turnover over the value of the contract is at least 2. The procuring entity will use annual accounts from the previous 2 financial years to verify the candidates turnover.
+A tender with a single lot where the selection criterion only applies for selecting candidates to be invited to the second stage of the procedure. The candidates will be selected only if the rate of their turnover over the value of the contract is at least 2. The procuring entity will use annual accounts from the previous two financial years to verify the candidates' turnover.
 
 ```json
 {
