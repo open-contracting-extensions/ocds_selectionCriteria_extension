@@ -42,7 +42,7 @@ Potential suppliers and subcontractors must demonstrate a minimum of 10 years ex
 
 ### Lot
 
-A tender with a single lot where the selection criterion only applies for selecting candidates to be invited to the second stage of the procedure. The candidates will be selected only if the rate of their turnover over the value of the contract is at least 2.
+A tender with a single lot where the selection criterion only applies for selecting candidates to be invited to the second stage of the procedure. The candidates will be selected only if the rate of their turnover over the value of the contract is at least 2. The procuring entity will use annual accounts from the previous two financial years to verify the candidates' turnover.
 
 ```json
 {
@@ -61,7 +61,8 @@ A tender with a single lot where the selection criterion only applies for select
                   "number": 2,
                   "threshold": "minimumScore"
                 }
-              ]
+              ],
+              "verificationMethod": "Annual accounts from previous 2 financial years."
             }
           ]
         }
@@ -76,6 +77,10 @@ A tender with a single lot where the selection criterion only applies for select
 Report issues for this extension in the [ocds-extensions repository](https://github.com/open-contracting/ocds-extensions/issues), putting the extension's name in the issue's title.
 
 ## Changelog
+
+### 2024-01-25
+
+* Add `verificationMethod` field to the `SelectionCriterion` object.
 
 ### 2023-04-05
 
