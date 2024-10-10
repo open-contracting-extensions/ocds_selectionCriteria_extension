@@ -29,6 +29,7 @@ Potential suppliers and subcontractors must demonstrate a minimum of 10 years ex
           "description": "Minimum number of years of experience on similar projects",
           "minimum": "10",
           "type": "technical",
+          "subType": "slc-abil-ref-services",
           "appliesTo": [
             "supplier",
             "subcontractor"
@@ -77,6 +78,8 @@ A tender with a single lot where the selection criterion only applies for select
 Report issues for this extension in the [ocds-extensions repository](https://github.com/open-contracting/ocds-extensions/issues), putting the extension's name in the issue's title.
 
 ## Changelog
+
+* Add `subType` field to the `SelectionCriterion` object.
 
 ### 2024-01-25
 

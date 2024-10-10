@@ -68,6 +68,15 @@
             null
           ]
         },
+        "subType": {
+          "title": "Subtype",
+          "description": "The subtype of the criterion.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
         "description": {
           "title": "Description",
           "description": "The description of the criterion.",
