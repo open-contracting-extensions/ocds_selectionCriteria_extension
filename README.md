@@ -79,6 +79,8 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 ## Changelog
 
+### 2024-10-10
+
 * Add `subType` field to the `SelectionCriterion` object.
 
 ### 2024-01-25
